@@ -49,6 +49,7 @@ createUserWithEmailAndPassword(auth, form.email,form.password)
     const user = userCredential.user;
     // ...
     this.isAuthenticated=true;
+    this.router.navigate(['']);
   })
   .catch((error) => {
     const errorCode = error.code;

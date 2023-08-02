@@ -5,8 +5,10 @@
     </div>
     
     <div>
+        <ng-container *ngIf="isAuthenticated()">
         <a class="mx-4" routerLink="home">Моите рецепти</a>
         <a class="mx-4" routerLink="create">Създайте рецепти</a>
+    </ng-container>
         <ng-container *ngIf="!isAuthenticated()">
             <a class="mx-4" routerLink="login">Вход</a>
             <a class="mx-4" routerLink="register">Регистрация</a>
