@@ -7,6 +7,10 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { MyRecipeComponent } from './my-recipe/my-recipe.component';
 import { RecreateComponent } from './recreate/recreate.component';
 import { AuthModule } from './auth/auth.module';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +25,10 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -42,6 +42,9 @@ export class AuthService {
     this.passwordMatched = false;
     return;
   }
+  if(form.password.length<6){
+    alert("Паролата трябва да има минимум 6 символа");
+  }
   const auth = getAuth();
 createUserWithEmailAndPassword(auth, form.email,form.password)
   .then((userCredential) => {

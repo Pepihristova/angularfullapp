@@ -1,1 +1,12 @@
 <p>my-recipe works!</p>
+
+<ol>
+    <li>
+        <ul *ngFor="let data of recipeData |async">
+            <li > {{ data.name}} </li>
+            <li > {{ data.purpose}} </li>
+            <li > {{ data.ingredients}} </li>
+            <li > {{ data.description}} </li>
+        </ul>
+    </li>
+</ol>

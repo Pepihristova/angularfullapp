@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "beautyangular": {
+      "hosting": {
+        "fullconcept": [
+          "beautyangular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "beautyangular"
+  }
+}
