@@ -1,0 +1,7 @@
+form{
+    background-color: #F8F8FF;
+    -webkit-box-shadow: 0px 0px 69px 25px rgba(248,249,254,1);
+-moz-box-shadow: 0px 0px 69px 25px rgba(248,249,254,1);
+box-shadow: 0px 0px 69px 25px rgba(248,249,254,1);
+color: #323E42;
+}

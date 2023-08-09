@@ -1,12 +1,45 @@
-<p>my-recipe works!</p>
 
-<ol>
-    <li>
-        <ul *ngFor="let data of recipeData |async">
-            <li > {{ data.name}} </li>
-            <li > {{ data.purpose}} </li>
-            <li > {{ data.ingredients}} </li>
-            <li > {{ data.description}} </li>
-        </ul>
-    </li>
-</ol>
+<div class="flex m-auto h-screen justify-center border m-auto">
+
+    
+<div class="decoration">
+    <ol>
+        <p class="title">Коса</p>
+        <li>
+            <ul *ngFor="let data of recipeData |async">
+                <ng-container *ngIf="data.purpose === 'коса'">
+                    <label>Име:</label>
+                    <li >  <p class="content">{{ data.name}}</p> </li>
+                    <label>Съставки:</label>
+                    <li > <p class="content"> {{ data.ingredients}}</p> </li>
+                    <label>Описание:</label>
+                    <li > <p class="content">{{ data.description}} </p></li>
+                </ng-container>
+                
+            </ul>
+        </li>
+        <hr style="color: black; background-color: black;">
+    </ol>
+    
+</div>
+<div class="decoration">
+    
+    <ol>
+        <p class="title">Лице</p>
+        <li>
+            <ul *ngFor="let data of recipeData |async">
+                <ng-container *ngIf="data.purpose === 'лице'">
+                    <label>Име:</label>
+                    <li ><p class="content">{{ data.name}} </p> </li>
+                    <label>Съставки:</label>
+                    <li > <p class="content">{{ data.ingredients}}</p> </li>
+                    <label>Описание:</label>
+                    <li > <p class="content">{{ data.description}} </p></li>
+                </ng-container>
+                
+            </ul>
+        </li>
+    </ol>
+
+</div>
+</div>

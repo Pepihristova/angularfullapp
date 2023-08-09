@@ -15,7 +15,7 @@ export class RecreateComponent {
     const collectionInstance = collection(this.firestore, 'recipe');
     addDoc(collectionInstance, f.value).then(() =>{
       console.log("Data Saved");
-      this.router.navigate(['home']);
+      this.router.navigate(['']);
     })
     .catch((err)=>{
       console.log(err);
@@ -23,10 +23,5 @@ export class RecreateComponent {
     
   }
 
-  getData(){
-    const collectionInstance = collection(this.firestore, 'recipe');
-    collectionData(collectionInstance).subscribe(val =>{
-      console.log(val);
-    })
-  }
+  
 }

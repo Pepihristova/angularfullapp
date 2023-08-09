@@ -1,0 +1,48 @@
+ol{
+    color: #323E42;
+    background-color: 	#E9D5FF ;
+    border-radius: 25%;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+li{
+    margin: 3%;
+    text-shadow: 2px 2px 5px grey;
+    
+}
+
+.content{
+    background-color: rgb(248, 249, 254, 0.7);
+    -webkit-box-shadow: 0px 0px 69px 25px rgba(248,249,254,1);
+-moz-box-shadow: 0px 0px 69px 25px rgba(248,249,254,1);
+box-shadow: 0px 0px 69px 25px rgba(248,249,254,1);
+}
+label{
+    color: #323232;
+    font-style: italic;
+    text-shadow: 2px 2px 5px grey;
+    font-size: 1.5em;
+
+}
+div{
+    margin-top: 3%;
+    background-color: #F8F8FF;
+    border-radius: 15%;
+    width: 90%;
+    height: 100%;
+}
+.title{
+    text-decoration: underline;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px grey;
+}
+.decoration{
+    text-align: center;
+    position: relative;
+    outline: dashed #C59AE9;
+    margin: 5%;
+}

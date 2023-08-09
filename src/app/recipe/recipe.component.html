@@ -1,11 +1,33 @@
-<p>recipe works!</p>
-<ol>
-    <li>
-        <ul *ngFor="let data of recipeData1 |async">
-            <li > {{ data.name}} </li>
-            <li > {{ data.purpose}} </li>
-            <li > {{ data.ingredients}} </li>
-            <li > {{ data.description}} </li>
-        </ul>
-    </li>
-</ol>
+<div id="flex-container">
+    <div class="flex-left">
+
+        <img src="/assets/images/dispenser-pump-cosmetic-icon-cartoon-style-vector-16248899-removebg-preview.png" class="bottle">
+
+    </div>
+    <div class="flex-middle">
+        <img src="/assets/images/mask.png" class="mask">
+<p class="maincont">Позволете си да се поглезите в удобството на домашния уют и красотата на природните съставки.
+    
+     Тук ще намерите рецепти за всякакви проблеми, а също така ще можете да допринесете към бюти рутината на други момичета със знанията си! </p>
+        
+
+    </div>
+    <div class="flex-right">
+
+        <ol>
+            <li>
+                <ul *ngFor="let data of recipeData1 |async">
+                    <p class="label">Име</p>
+                    <li > {{ data.name}} </li>
+                    <p class="label">Съставки</p>
+                    <li > {{ data.ingredients}} </li>
+                    <p class="label">Описание</p>
+                    <li > {{ data.description}}  ---------------------------------- </li>
+                </ul>
+               
+            </li>
+        </ol>
+
+    </div>
+</div>
+

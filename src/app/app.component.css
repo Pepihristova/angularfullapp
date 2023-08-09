@@ -1,0 +1,10 @@
+nav{
+    color: #323E42;
+}
+#background{
+    background-image: url('/assets/images/purple-floral-background.jpg'); 
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

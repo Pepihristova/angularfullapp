@@ -59,6 +59,7 @@ createUserWithEmailAndPassword(auth, form.email,form.password)
     const errorMessage = error.message;
     // ..
     this.isAuthenticated=false;
+    alert("Имейлът трябва да е валиден!");
   })
   .finally(()=> (this.isLoading=false));
   ;

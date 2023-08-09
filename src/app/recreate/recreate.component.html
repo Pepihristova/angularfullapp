@@ -2,15 +2,15 @@
 <div class="flex m-auto h-screen justify-center">
     <form class="p-4 rounded-lg border m-auto w-1/3" #f="ngForm" (ngSubmit)="addData(f)">
         <p>Име</p>
-        <input type="text" class="border" name="name" ngModel>
+        <input type="text" class="p-2 rounded w-full border" name="name" ngModel >
         <p>Предназначение</p>
-        <input type="text" class="border" name="purpose" ngModel>
+        <input type="text" class="p-2 rounded w-full border" name="purpose" ngModel>
         <p>Съставки</p>
-        <input type="text" class="border" name="ingredients" ngModel>
+        <input type="text" class="p-2 rounded w-full border" name="ingredients" ngModel>
         <p>Описание</p>
-        <input type="text" class="border" name="description" ngModel>
+        <input type="text" class="p-2 rounded w-full border" name="description" ngModel>
         <br>
-        <button type="submit" class="m-4 border rounded">Създай рецепта</button>
+        <button type="submit" class="p-2 w-full bg-purple-200 hover:bg-purple-400 rounded">Създай рецепта</button>
     </form>
     
 </div>
